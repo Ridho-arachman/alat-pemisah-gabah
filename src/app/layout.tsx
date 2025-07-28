@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,15 +20,40 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="id">
+      <body className="bg-gray-50 min-h-screen">
+        <nav className="w-full bg-white shadow-md px-4 py-2 flex items-center justify-between sticky top-0 z-50">
+          <div className="font-bold text-lg">
+            <Link href="/">Alat Pemisah Gabah</Link>
+          </div>
+          <div className="space-x-2 hidden md:flex">
+            <Link href="/cara-penggunaan" className="hover:underline">
+              Cara Penggunaan
+            </Link>
+            <Link href="/perawatan" className="hover:underline">
+              Perawatan
+            </Link>
+            <Link href="/video" className="hover:underline">
+              Video
+            </Link>
+            <Link href="/unduh" className="hover:underline">
+              Unduh Modul
+            </Link>
+            <Link href="/tentang" className="hover:underline">
+              Tentang
+            </Link>
+          </div>
+          {/* Mobile menu placeholder */}
+          <div className="md:hidden">
+            {/* TODO: Ganti dengan Sheet/Menu shadcn/ui jika sudah ada */}
+            <button className="p-2 border rounded">Menu</button>
+          </div>
+        </nav>
+        <main className="max-w-2xl mx-auto px-2 py-4">{children}</main>
       </body>
     </html>
   );
