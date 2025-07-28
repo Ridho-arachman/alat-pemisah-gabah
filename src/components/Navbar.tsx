@@ -19,14 +19,24 @@ export default function Navbar() {
   return (
     <nav className="w-full bg-white shadow-md px-4 py-5 flex items-center justify-between sticky top-0 z-50">
       <div className="flex items-center gap-4">
-        <Image
-          src="/logo.png"
-          alt="Logo Alat"
-          width={100}
-          height={100}
-          className="w-16 h-16 rounded-full bg-blue-100 object-contain"
-          priority
-        />
+        <div className="flex items-center gap-2">
+          <Image
+            src="/logo.png"
+            alt="Logo Alat"
+            width={100}
+            height={100}
+            className="w-16 h-16 rounded-full bg-blue-100 object-contain"
+            priority
+          />
+          <Image
+            src="/logo_uniba.png"
+            alt="Logo Alat"
+            width={100}
+            height={100}
+            className="w-16 h-16 rounded-full bg-blue-100 object-contain"
+            priority
+          />
+        </div>
         <Link
           href="/"
           className="font-bold text-lg tracking-tight hover:opacity-80 transition"

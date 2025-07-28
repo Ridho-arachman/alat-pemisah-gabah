@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Montserrat, Inter } from "next/font/google";
 
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className="bg-gray-50 min-h-screen font-body">
         <Navbar />
         <main className="max-w-2xl mx-auto px-2 py-4">{children}</main>
+        <Footer />
       </body>
     </html>
   );

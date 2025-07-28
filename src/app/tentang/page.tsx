@@ -46,8 +46,9 @@ export default function Tentang() {
               Gabah Berisi dan Gabah Kosong Berbasis Blower Mesin Air
             </p>
             <p>
-              <span className="font-semibold">Dibuat oleh:</span> Divisi TTG dan
-              TI – KKM 71 Universitas Bina Bangsa
+              <span className="font-semibold">Dibuat oleh:</span> Divisi
+              Teknologi Tepat Guna dan Teknologi Informasi – Kelompok KKM 71
+              Universitas Bina Bangsa
             </p>
             <p>
               <span className="font-semibold">Tahun:</span> 2025
