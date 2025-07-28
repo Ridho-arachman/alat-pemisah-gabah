@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Info, AlertTriangle } from "lucide-react";
+
 import Image from "next/image";
 
 const langkah = [

@@ -73,8 +73,8 @@ export default function UnduhModul() {
           <CardContent className="p-0">
             <h2 className="font-semibold text-lg mb-1">Petunjuk Download</h2>
             <p className="text-gray-700 text-sm">
-              Jika file tidak terunduh otomatis, klik kanan lalu pilih "Save
-              link as..."
+              Jika file tidak terunduh otomatis, klik kanan lalu pilih
+              &quot;Save link as...&quot;
             </p>
           </CardContent>
         </Card>

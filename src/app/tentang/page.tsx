@@ -131,7 +131,7 @@ export default function Tentang() {
                 <User className="w-5 h-5 text-blue-400" />
                 <span className="font-semibold text-blue-700">{t.nama}</span>
               </div>
-              <p className="text-gray-700 italic">"{t.isi}"</p>
+              <p className="text-gray-700 italic">&quot;{t.isi}&quot;</p>
             </Card>
           ))}
         </div>
