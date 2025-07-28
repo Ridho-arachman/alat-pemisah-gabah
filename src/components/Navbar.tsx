@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/cara-penggunaan", label: "Cara Penggunaan" },
@@ -16,16 +17,21 @@ const navLinks = [
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="w-full bg-white shadow-md px-4 py-2 flex items-center justify-between sticky top-0 z-50">
-      <div className="flex items-center gap-2">
-        <span className=" w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-          A
-        </span>
+    <nav className="w-full bg-white shadow-md px-4 py-5 flex items-center justify-between sticky top-0 z-50">
+      <div className="flex items-center gap-4">
+        <Image
+          src="/logo.png"
+          alt="Logo Alat"
+          width={100}
+          height={100}
+          className="w-16 h-16 rounded-full bg-blue-100 object-contain"
+          priority
+        />
         <Link
           href="/"
           className="font-bold text-lg tracking-tight hover:opacity-80 transition"
         >
-          Alat Pemisah Gabah
+          Panduan Penggunaan Alat Pemisah Gabah
         </Link>
       </div>
       <div className="space-x-1 hidden md:flex">
@@ -57,9 +63,14 @@ export default function Navbar() {
           <SheetContent side="left" className="p-0 w-64">
             <div className="flex flex-col h-full">
               <div className="flex items-center gap-2 px-4 py-4 border-b">
-                <span className=" w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">
-                  A
-                </span>
+                <Image
+                  src="/file.svg"
+                  alt="Logo Alat"
+                  width={32}
+                  height={32}
+                  className="w-8 h-8 rounded-full bg-blue-100 object-contain"
+                  priority
+                />
                 <Link
                   href="/"
                   className="font-bold text-lg tracking-tight hover:opacity-80 transition"
