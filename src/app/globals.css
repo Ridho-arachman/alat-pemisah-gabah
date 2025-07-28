@@ -76,6 +76,28 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+}
+
+.font-heading,
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+.font-body,
+body,
+p,
+li,
+ul,
+ol {
+  font-family: var(--font-body);
 }
 
 .dark {

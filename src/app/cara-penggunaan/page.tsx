@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Info, AlertTriangle } from "lucide-react";
+import Image from "next/image";
 
 const langkah = [
   {
@@ -22,36 +24,46 @@ const langkah = [
 
 export default function CaraPenggunaan() {
   return (
-    <div className="space-y-6">
-      <h1 className="text-xl md:text-2xl font-bold mb-2">
-        Cara Penggunaan Alat
-      </h1>
-      <div className="space-y-4">
-        {langkah.map((l, i) => (
-          <Card key={i} className="bg-white">
-            <CardContent className="p-4">
-              <h2 className="font-semibold text-lg mb-1">{l.judul}</h2>
-              <p>{l.isi}</p>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-      <div className="mt-6">
-        <h2 className="font-semibold text-lg mb-2">Tips Keselamatan</h2>
-        <ul className="list-disc ml-6 text-gray-700">
-          <li>Gunakan alat di tempat kering dan berventilasi baik.</li>
-          <li>Jangan memasukkan tangan ke dalam alat saat blower menyala.</li>
-          <li>Pastikan kabel listrik tidak terkelupas.</li>
-        </ul>
-      </div>
-      <div className="mt-4">
-        <h2 className="font-semibold text-lg mb-2">Hal yang Harus Dihindari</h2>
-        <ul className="list-disc ml-6 text-gray-700">
-          <li>Jangan mengoperasikan alat tanpa pengawasan.</li>
-          <li>Hindari penggunaan alat saat hujan atau kondisi basah.</li>
-          <li>Jangan memaksa alat jika terjadi macet.</li>
-        </ul>
-      </div>
+    <div className="flex flex-col gap-12 py-4">
+      {/* Langkah Section */}
+      <section>
+        <h1 className="text-2xl md:text-3xl font-bold text-blue-700 mb-6 text-center">
+          Cara Penggunaan Alat
+        </h1>
+        <div className="grid gap-4 md:grid-cols-2">
+          {langkah.map((l, i) => (
+            <Card key={i} className="flex flex-row items-start gap-4 p-4">
+              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-700 text-lg">
+                {i + 1}
+              </div>
+              <CardContent className="p-0">
+                <h2 className="font-semibold text-lg mb-1">{l.judul}</h2>
+                <p className="text-gray-700">{l.isi}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+      {/* Ilustrasi Section */}
+      <section className="w-full max-w-2xl mx-auto">
+        <h2 className="text-xl md:text-2xl font-bold text-blue-700 mb-4 text-center">
+          Ilustrasi / Skema Alat
+        </h2>
+        <Card className="flex flex-col items-center p-6">
+          <div className="relative w-64 h-40 md:w-96 md:h-56 rounded-lg overflow-hidden border-2 border-blue-100 bg-gray-100 mb-4">
+            <Image
+              src="/file.svg"
+              alt="Ilustrasi Alat (placeholder)"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <p className="text-gray-600 text-center">
+            Gambar kerja atau diagram alur alat. Ganti dengan ilustrasi asli
+            jika tersedia.
+          </p>
+        </Card>
+      </section>
     </div>
   );
 }
