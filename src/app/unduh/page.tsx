@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Download, Image as ImageIcon, BookOpen } from "lucide-react";
+import { Download, Image as ImageIcon } from "lucide-react";
 import data from "@/lib/unduh.json";
 import type { Metadata } from "next";
 
@@ -49,16 +49,52 @@ export default function UnduhModul() {
       {/* Preview Modul Section */}
       <section className="w-full max-w-2xl mx-auto">
         <h2 className="text-xl md:text-2xl font-bold text-blue-700 mb-4 flex items-center gap-2">
-          <BookOpen className="w-6 h-6 text-blue-500" />
-          {data.daftarIsi.title}
+          📑 DAFTAR ISI
         </h2>
         <Card className="bg-gray-50">
           <CardContent className="py-4">
-            <ul className="list-decimal ml-8 text-gray-700 space-y-1">
-              {data.daftarIsi.items.map((item: string, i: number) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
+            <pre className="whitespace-pre-wrap text-gray-700 text-sm md:text-base font-mono leading-relaxed">
+              {`
+KATA PENGANTAR................................................................. i
+DAFTAR ISI.................................................................... ii
+DAFTAR GAMBAR................................................................. iii
+DAFTAR TABEL.................................................................. iv
+
+BAB I – PENDAHULUAN........................................................... 1
+  1.1 Latar Belakang
+  1.2 Rumusan Masalah
+  1.3 Tujuan Kegiatan
+  1.4 Manfaat Kegiatan
+  1.5 Waktu dan Lokasi Pelaksanaan
+
+BAB II – LANDASAN TEORI DAN STUDI TERDAHULU.................... 6
+  2.1 Teknologi Tepat Guna (TTG) dalam Pertanian
+  2.2 Prinsip Pemisahan Gabah berdasarkan Berat Jenis
+  2.3 Studi Alat Sejenis dan Komponen Utama
+
+BAB III – DESAIN DAN SPESIFIKASI ALAT............................. 10
+  3.1 Gambar Rancangan Umum
+  3.2 Deskripsi Komponen:
+      – Kerangka Kayu
+      – Blower Mesin Air
+      – Saluran Masuk dan Keluaran Gabah
+      – Potensiometer
+  3.3 Prinsip Kerja Berdasarkan Massa Jenis dan Aliran Udara
+  3.4 Estimasi Biaya Pembuatan
+
+BAB IV – PEMBUATAN DAN PERAKITAN ALAT.......................... 17
+  4.1 Alat dan Bahan
+  4.2 Prosedur Pembuatan dan Perakitan
+  4.3 Penyesuaian dan Kalibrasi
+  4.4 Keselamatan Kerja
+
+BAB V – PENUTUP......................................................... 24
+  5.1 Kesimpulan
+  5.2 Saran dan Pengembangan ke Depan
+
+DAFTAR PUSTAKA............................................................... 26
+`}
+            </pre>
           </CardContent>
         </Card>
       </section>
