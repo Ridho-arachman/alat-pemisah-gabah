@@ -1,4 +1,8 @@
-import { Card, CardContent } from "@/components/ui/card";
+"use client";
+import data from "@/lib/tentang.json";
+
+import Image from "next/image";
+import { useState } from "react";
 import {
   Users,
   Mail,
@@ -7,16 +11,30 @@ import {
   CalendarCheck,
   MessageCircle,
 } from "lucide-react";
-import data from "@/lib/tentang.json";
-import type { Metadata } from "next";
-import Image from "next/image";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Card, CardContent } from "@/components/ui/card";
 
-export const metadata: Metadata = {
-  title: data.title,
-  description: data.infoAlat?.namaAlat || "Tentang alat dan tim KKM 71.",
+type TimMember = {
+  nama: string;
+  peran: string;
+  foto?: string | null;
+  deskripsi?: string;
 };
 
 export default function Tentang() {
+  const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState<TimMember | null>(null);
+
+  const handleOpen = (t: TimMember) => {
+    setSelected(t);
+    setOpen(true);
+  };
+
   return (
     <div className="flex flex-col gap-12 items-center justify-center min-h-[60vh] py-8 px-2">
       {/* Info Alat & Tim Section */}
@@ -76,10 +94,11 @@ export default function Tentang() {
           Profil Tim
         </h2>
         <div className="grid md:grid-cols-3 gap-4">
-          {data.tim.map((t, i) => (
+          {data.tim.map((t: TimMember, i: number) => (
             <Card
               key={i}
-              className="flex flex-col items-center gap-2 p-4 cursor-pointer"
+              className="flex flex-col items-center gap-2 p-4 cursor-pointer transition-transform duration-200 hover:scale-105"
+              onClick={() => handleOpen(t)}
             >
               <Image
                 src={t.foto || "/tim/avatar.png"}
@@ -93,6 +112,40 @@ export default function Tentang() {
             </Card>
           ))}
         </div>
+        {/* Modal Preview Tim (Dialog di tengah) */}
+        <Dialog open={open} onOpenChange={setOpen}>
+          <DialogContent className="max-w-sm w-full p-0 overflow-hidden">
+            {selected && (
+              <div className="flex flex-col items-center">
+                {/* Header Foto Besar */}
+                <div className="w-full h-96 bg-gray-100 relative">
+                  <Image
+                    src={selected.foto || "/tim/avatar.png"}
+                    alt={selected.nama}
+                    fill
+                    className="object-cover object-top w-full h-full rounded-t-xl border-b"
+                    priority
+                  />
+                </div>
+                <div className="w-full px-6 pb-6 pt-4 flex flex-col items-center">
+                  <DialogHeader className="w-full items-center">
+                    <DialogTitle className="text-center w-full text-blue-700 text-xl font-bold mb-1">
+                      {selected.nama}
+                    </DialogTitle>
+                  </DialogHeader>
+                  <div className="text-gray-600 mb-2 text-center">
+                    {selected.peran}
+                  </div>
+                  {selected.deskripsi && (
+                    <div className="text-gray-700 text-sm mt-2 text-center">
+                      {selected.deskripsi}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
       </section>
       {/* Riwayat Pengembangan Section */}
       <section className="w-full max-w-2xl mx-auto">
