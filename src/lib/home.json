@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "Alat Pemisah Gabah Berisi dan Gabah Kosong Berbasis Blower Mesin Air",
+    "description": "Solusi tepat guna untuk meningkatkan hasil panen dan efisiensi kerja petani. Alat ini memisahkan gabah berisi dan kosong secara efisien menggunakan blower mesin air.",
+    "image": "/file.svg",
+    "imageAlt": "Gambar Alat (placeholder)",
+    "buttonText": "Lihat Panduan Penggunaan"
+  },
+  "fitur": [
+    {
+      "title": "Hemat Energi",
+      "desc": "Menggunakan blower efisien dan konsumsi listrik rendah."
+    },
+    {
+      "title": "Aman & Mudah",
+      "desc": "Desain ramah pengguna, mudah dibersihkan dan dirawat."
+    },
+    {
+      "title": "Akurasi Tinggi",
+      "desc": "Pemisahan gabah berisi & kosong sangat akurat."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Apakah alat ini mudah dipindahkan?",
+      "a": "Ya, alat ini didesain portabel dan ringan."
+    },
+    {
+      "q": "Apakah bisa digunakan di luar ruangan?",
+      "a": "Bisa, asalkan tidak terkena hujan langsung dan tetap di tempat kering."
+    },
+    {
+      "q": "Berapa kapasitas pemisahan per jam?",
+      "a": "Sekitar 50-100 kg/jam tergantung jenis gabah dan blower."
+    }
+  ],
+  "links": [
+    {
+      "href": "/perawatan",
+      "label": "Perawatan"
+    },
+    {
+      "href": "/video",
+      "label": "Video"
+    },
+    {
+      "href": "/unduh",
+      "label": "Unduh Modul"
+    },
+    {
+      "href": "/tentang",
+      "label": "Tentang"
+    }
+  ]
+}

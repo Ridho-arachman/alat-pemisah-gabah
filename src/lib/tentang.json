@@ -1,0 +1,64 @@
+{
+  "title": "Tentang Alat & Tim",
+  "infoAlat": {
+    "namaAlat": "Alat Pemisah Gabah Berisi dan Gabah Kosong Berbasis Blower Mesin Air dengan Potensio",
+    "dibuatOleh": "Divisi Teknologi Tepat Guna dan Teknologi Informasi – Kelompok KKM 71 Universitas Bina Bangsa",
+    "tahun": "2025"
+  },
+  "kontak": {
+    "title": "Kontak",
+    "email": {
+      "address": "ttg.kkm71@email.com",
+      "link": "mailto:ttg.kkm71@email.com"
+    },
+    "phone": {
+      "number": "0812-3456-7890",
+      "link": "https://wa.me/6281234567890"
+    }
+  },
+  "tim": [
+    {
+      "nama": "Andi",
+      "peran": "Ketua Tim",
+      "foto": null
+    },
+    {
+      "nama": "Budi",
+      "peran": "Teknisi",
+      "foto": null
+    },
+    {
+      "nama": "Citra",
+      "peran": "Desain & Dokumentasi",
+      "foto": null
+    }
+  ],
+  "riwayat": [
+    {
+      "tahun": "2024",
+      "event": "Riset & desain awal alat"
+    },
+    {
+      "tahun": "2025",
+      "event": "Pembuatan & uji coba lapangan"
+    },
+    {
+      "tahun": "2025",
+      "event": "Implementasi di KKM 71"
+    }
+  ],
+  "testimoni": [
+    {
+      "nama": "Pak Darto",
+      "isi": "Alat ini sangat membantu saat panen, hasilnya lebih cepat dan bersih."
+    },
+    {
+      "nama": "Bu Siti",
+      "isi": "Pengoperasian mudah, cocok untuk petani kecil."
+    }
+  ],
+  "lokasi": {
+    "title": "Lokasi Kegiatan KKM",
+    "mapsUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31728.152321237776!2d106.2891902185314!3d-6.261221938529664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e421b0e39cc6ec5%3A0x94740a34169522db!2sBinong%2C%20Kec.%20Pamarayan%2C%20Kabupaten%20Serang%2C%20Banten!5e0!3m2!1sid!2sid!4v1753698527048!5m2!1sid!2sid"
+  }
+}

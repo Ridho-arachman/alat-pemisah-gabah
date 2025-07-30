@@ -1,0 +1,26 @@
+{
+  "title": "Unduh Modul & Gambar Kerja",
+  "description": "Modul ini berisi petunjuk lengkap penggunaan, perawatan, dan troubleshooting alat pemisah gabah berbasis blower mesin air.",
+  "download": {
+    "buttonText": "Download Modul PDF",
+    "filePath": "/modul-ttg.pdf"
+  },
+  "gambarKerja": {
+    "title": "Lihat Gambar Kerja (placeholder)",
+    "filePath": "/file.svg"
+  },
+  "daftarIsi": {
+    "title": "Preview Daftar Isi Modul",
+    "items": [
+      "Pendahuluan",
+      "Spesifikasi Alat",
+      "Langkah Penggunaan",
+      "Perawatan & Troubleshooting",
+      "Kontak Bantuan"
+    ]
+  },
+  "petunjuk": {
+    "title": "Petunjuk Download",
+    "description": "Jika file tidak terunduh otomatis, klik kanan lalu pilih \"Save link as...\""
+  }
+}

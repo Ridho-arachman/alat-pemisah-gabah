@@ -1,0 +1,16 @@
+{
+  "title": "Video Panduan Penggunaan Alat",
+  "video": {
+    "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "title": "Video Panduan",
+    "description": "Tonton video ini untuk memahami cara kerja dan penggunaan alat pemisah gabah berisi dan gabah kosong berbasis blower mesin air."
+  },
+  "poinPenting": {
+    "title": "Poin Penting Video",
+    "items": [
+      "Pastikan alat terpasang dengan benar sebelum dinyalakan.",
+      "Jangan memasukkan tangan ke dalam alat saat blower aktif.",
+      "Ambil hasil pemisahan dari wadah yang sesuai."
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Cara Penggunaan Alat",
+  "langkah": [
+    {
+      "judul": "1. Persiapan Alat",
+      "isi": "Pastikan alat terpasang dengan benar dan blower mesin air dalam kondisi baik."
+    },
+    {
+      "judul": "2. Pengisian Gabah",
+      "isi": "Masukkan gabah ke dalam hopper/pengumpan secara perlahan."
+    },
+    {
+      "judul": "3. Pengoperasian",
+      "isi": "Nyalakan blower dan atur kecepatan sesuai kebutuhan. Gabah akan terpisah otomatis."
+    },
+    {
+      "judul": "4. Pengambilan Hasil",
+      "isi": "Ambil gabah berisi dan gabah kosong dari wadah output yang berbeda."
+    }
+  ],
+  "ilustrasi": {
+    "title": "Ilustrasi / Skema Alat",
+    "image": "/file.svg",
+    "alt": "Ilustrasi Alat (placeholder)",
+    "description": "Gambar kerja atau diagram alur alat. Ganti dengan ilustrasi asli jika tersedia."
+  }
+}

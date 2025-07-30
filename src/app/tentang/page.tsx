@@ -7,26 +7,7 @@ import {
   CalendarCheck,
   MessageCircle,
 } from "lucide-react";
-
-const tim = [
-  { nama: "Andi", peran: "Ketua Tim", foto: null },
-  { nama: "Budi", peran: "Teknisi", foto: null },
-  { nama: "Citra", peran: "Desain & Dokumentasi", foto: null },
-];
-
-const riwayat = [
-  { tahun: "2024", event: "Riset & desain awal alat" },
-  { tahun: "2025", event: "Pembuatan & uji coba lapangan" },
-  { tahun: "2025", event: "Implementasi di KKM 71" },
-];
-
-const testimoni = [
-  {
-    nama: "Pak Darto",
-    isi: "Alat ini sangat membantu saat panen, hasilnya lebih cepat dan bersih.",
-  },
-  { nama: "Bu Siti", isi: "Pengoperasian mudah, cocok untuk petani kecil." },
-];
+import data from "@/lib/tentang.json";
 
 export default function Tentang() {
   return (
@@ -37,45 +18,44 @@ export default function Tentang() {
           <div className="flex items-center gap-2 justify-center">
             <Users className="w-7 h-7 text-blue-600" />
             <h1 className="text-2xl md:text-3xl font-bold text-blue-700 mb-2 text-center">
-              Tentang Alat & Tim
+              {data.title}
             </h1>
           </div>
           <div className="space-y-2 text-gray-700">
             <p>
-              <span className="font-semibold">Nama Alat:</span> Alat Pemisah
-              Gabah Berisi dan Gabah Kosong Berbasis Blower Mesin Air dengan
-              Potensio
+              <span className="font-semibold">Nama Alat:</span>{" "}
+              {data.infoAlat.namaAlat}
             </p>
             <p>
-              <span className="font-semibold">Dibuat oleh:</span> Divisi
-              Teknologi Tepat Guna dan Teknologi Informasi – Kelompok KKM 71
-              Universitas Bina Bangsa
+              <span className="font-semibold">Dibuat oleh:</span>{" "}
+              {data.infoAlat.dibuatOleh}
             </p>
             <p>
-              <span className="font-semibold">Tahun:</span> 2025
+              <span className="font-semibold">Tahun:</span>{" "}
+              {data.infoAlat.tahun}
             </p>
           </div>
           <div className="mt-4">
             <h2 className="font-semibold text-lg mb-2 flex items-center gap-2">
-              <Mail className="w-5 h-5 text-blue-400" /> Kontak
+              <Mail className="w-5 h-5 text-blue-400" /> {data.kontak.title}
             </h2>
             <ul className="text-gray-700 space-y-1">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-blue-400" />
                 <a
-                  href="mailto:ttg.kkm71@email.com"
+                  href={data.kontak.email.link}
                   className="underline text-blue-700"
                 >
-                  ttg.kkm71@email.com
+                  {data.kontak.email.address}
                 </a>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-blue-400" />
                 <a
-                  href="https://wa.me/6281234567890"
+                  href={data.kontak.phone.link}
                   className="underline text-blue-700"
                 >
-                  0812-3456-7890
+                  {data.kontak.phone.number}
                 </a>
               </li>
             </ul>
@@ -89,7 +69,7 @@ export default function Tentang() {
           Profil Tim
         </h2>
         <div className="grid md:grid-cols-3 gap-4">
-          {tim.map((t, i) => (
+          {data.tim.map((t: any, i: number) => (
             <Card key={i} className="flex flex-col items-center gap-2 p-4">
               <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold text-2xl">
                 {t.nama[0]}
@@ -107,7 +87,7 @@ export default function Tentang() {
           Riwayat Pengembangan
         </h2>
         <div className="flex flex-col gap-3">
-          {riwayat.map((r, i) => (
+          {data.riwayat.map((r: any, i: number) => (
             <Card key={i} className="flex flex-row items-center gap-3 p-4">
               <CalendarCheck className="w-5 h-5 text-blue-400" />
               <CardContent className="p-0">
@@ -127,7 +107,7 @@ export default function Tentang() {
           Testimoni Pengguna
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
-          {testimoni.map((t, i) => (
+          {data.testimoni.map((t: any, i: number) => (
             <Card key={i} className="flex flex-col gap-2 p-4">
               <div className="flex items-center gap-2">
                 <User className="w-5 h-5 text-blue-400" />
@@ -144,11 +124,11 @@ export default function Tentang() {
           <span role="img" aria-label="maps">
             🗺️
           </span>
-          Lokasi Kegiatan KKM
+          {data.lokasi.title}
         </h2>
         <div className="w-full aspect-video rounded-lg overflow-hidden border shadow">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31728.152321237776!2d106.2891902185314!3d-6.261221938529664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e421b0e39cc6ec5%3A0x94740a34169522db!2sBinong%2C%20Kec.%20Pamarayan%2C%20Kabupaten%20Serang%2C%20Banten!5e0!3m2!1sid!2sid!4v1753698527048!5m2!1sid!2sid"
+            src={data.lokasi.mapsUrl}
             width="100%"
             height="100%"
             style={{ border: 0 }}

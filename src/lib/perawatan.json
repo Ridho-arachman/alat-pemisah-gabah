@@ -1,0 +1,51 @@
+{
+  "title": "Perawatan & Troubleshooting",
+  "perawatan": [
+    {
+      "judul": "Bersihkan alat secara berkala",
+      "isi": "Pastikan tidak ada sisa gabah atau debu yang menumpuk di dalam alat."
+    },
+    {
+      "judul": "Periksa blower dan kabel",
+      "isi": "Cek kondisi blower dan kabel listrik secara rutin untuk menghindari kerusakan."
+    },
+    {
+      "judul": "Lumasi bagian bergerak",
+      "isi": "Oleskan pelumas pada bagian yang bergerak agar tidak macet."
+    }
+  ],
+  "troubleshooting": [
+    {
+      "masalah": "Blower tidak menyala",
+      "solusi": "Periksa sambungan listrik dan pastikan kabel tidak putus."
+    },
+    {
+      "masalah": "Gabah tidak terpisah dengan baik",
+      "solusi": "Atur kecepatan blower dan pastikan tidak ada sumbatan pada saluran."
+    },
+    {
+      "masalah": "Alat bergetar berlebihan",
+      "solusi": "Pastikan alat diletakkan di permukaan rata dan baut terpasang kencang."
+    }
+  ],
+  "jadwal": [
+    {
+      "waktu": "Setiap Selesai Pakai",
+      "tugas": "Bersihkan sisa gabah & debu."
+    },
+    {
+      "waktu": "Mingguan",
+      "tugas": "Periksa blower, kabel, dan baut pengikat."
+    },
+    {
+      "waktu": "Bulanan",
+      "tugas": "Lumasi bagian bergerak & cek performa alat."
+    }
+  ],
+  "kontak": {
+    "title": "Butuh Bantuan Teknis?",
+    "description": "Hubungi tim teknis kami di",
+    "phone": "0812-3456-7890",
+    "phoneLink": "https://wa.me/6281234567890"
+  }
+}
