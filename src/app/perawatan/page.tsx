@@ -57,8 +57,12 @@ export default function Perawatan() {
         </h1>
         <Tabs defaultValue="perawatan" className="w-full">
           <TabsList className="mb-4 flex justify-center">
-            <TabsTrigger value="perawatan">Perawatan</TabsTrigger>
-            <TabsTrigger value="troubleshooting">Troubleshooting</TabsTrigger>
+            <TabsTrigger className="cursor-pointer" value="perawatan">
+              Perawatan
+            </TabsTrigger>
+            <TabsTrigger className="cursor-pointer" value="troubleshooting">
+              Troubleshooting
+            </TabsTrigger>
           </TabsList>
           <TabsContent value="perawatan">
             <div className="grid md:grid-cols-2 gap-4">

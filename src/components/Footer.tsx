@@ -9,15 +9,15 @@ export default function Footer() {
             src="/logo.png"
             alt="Logo KKM"
             className="w-8 h-8 md:w-10 md:h-10 object-contain rounded"
-            width={32}
-            height={32}
+            width={100}
+            height={100}
           />
           <Image
             src="/logo_uniba.png"
             alt="Logo Universitas"
             className="w-8 h-8 md:w-10 md:h-10 object-contain rounded"
-            width={32}
-            height={32}
+            width={100}
+            height={100}
           />
         </div>
         <div className="ml-2 max-w-full text-center md:text-left">
