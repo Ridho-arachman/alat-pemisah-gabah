@@ -8,6 +8,13 @@ import {
   MessageCircle,
 } from "lucide-react";
 import data from "@/lib/tentang.json";
+import type { Metadata } from "next";
+import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: data.title,
+  description: data.infoAlat?.namaAlat || "Tentang alat dan tim KKM 71.",
+};
 
 export default function Tentang() {
   return (
@@ -69,11 +76,18 @@ export default function Tentang() {
           Profil Tim
         </h2>
         <div className="grid md:grid-cols-3 gap-4">
-          {data.tim.map((t: any, i: number) => (
-            <Card key={i} className="flex flex-col items-center gap-2 p-4">
-              <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center text-blue-700 font-bold text-2xl">
-                {t.nama[0]}
-              </div>
+          {data.tim.map((t, i) => (
+            <Card
+              key={i}
+              className="flex flex-col items-center gap-2 p-4 cursor-pointer"
+            >
+              <Image
+                src={t.foto || "/tim/avatar.png"}
+                alt={t.nama}
+                width={100}
+                height={100}
+                className="rounded-full"
+              />
               <h3 className="font-semibold text-lg text-center">{t.nama}</h3>
               <p className="text-gray-600 text-center text-sm">{t.peran}</p>
             </Card>
@@ -87,7 +101,7 @@ export default function Tentang() {
           Riwayat Pengembangan
         </h2>
         <div className="flex flex-col gap-3">
-          {data.riwayat.map((r: any, i: number) => (
+          {data.riwayat.map((r, i) => (
             <Card key={i} className="flex flex-row items-center gap-3 p-4">
               <CalendarCheck className="w-5 h-5 text-blue-400" />
               <CardContent className="p-0">
@@ -107,7 +121,7 @@ export default function Tentang() {
           Testimoni Pengguna
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
-          {data.testimoni.map((t: any, i: number) => (
+          {data.testimoni.map((t, i) => (
             <Card key={i} className="flex flex-col gap-2 p-4">
               <div className="flex items-center gap-2">
                 <User className="w-5 h-5 text-blue-400" />

@@ -1,6 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { PlayCircle, ListChecks } from "lucide-react";
 import data from "@/lib/video.json";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: data.title,
+  description: data.video?.description || "Video panduan alat pemisah gabah.",
+};
 
 export default function VideoPanduan() {
   return (

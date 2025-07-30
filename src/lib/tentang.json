@@ -18,19 +18,24 @@
   },
   "tim": [
     {
-      "nama": "Andi",
-      "peran": "Ketua Tim",
-      "foto": null
+      "nama": "Nazil Fikri H",
+      "peran": "Ketua Divisi Teknologi Tepat Guna dan Teknologi Informasi",
+      "foto": "/tim/nazil.webp"
     },
     {
-      "nama": "Budi",
-      "peran": "Teknisi",
-      "foto": null
+      "nama": "M Ridho Arachman",
+      "peran": "Anggota Divisi Teknologi Tepat Guna dan Teknologi Informasi",
+      "foto": "/tim/ridho.webp"
     },
     {
-      "nama": "Citra",
-      "peran": "Desain & Dokumentasi",
-      "foto": null
+      "nama": "Phales G W",
+      "peran": "Anggota Divisi Teknologi Tepat Guna dan Teknologi Informasi",
+      "foto": "/tim/phales.webp"
+    },
+    {
+      "nama": "Tiur Pasaribu",
+      "peran": "Anggota Divisi Teknologi Tepat Guna dan Teknologi Informasi",
+      "foto": "/tim/tiur.webp"
     }
   ],
   "riwayat": [

@@ -16,6 +16,12 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import data from "@/lib/home.json";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: data.hero.title,
+  description: data.hero.description,
+};
 
 export default function Home() {
   return (

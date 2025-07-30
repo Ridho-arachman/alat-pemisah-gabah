@@ -2,6 +2,13 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import data from "@/lib/cara-penggunaan.json";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: data.title,
+  description:
+    data.ilustrasi?.description || "Panduan penggunaan alat pemisah gabah.",
+};
 
 export default function CaraPenggunaan() {
   return (

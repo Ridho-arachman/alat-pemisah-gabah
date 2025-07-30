@@ -2,6 +2,12 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Image as ImageIcon, BookOpen } from "lucide-react";
 import data from "@/lib/unduh.json";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: data.title,
+  description: data.description,
+};
 
 export default function UnduhModul() {
   return (
