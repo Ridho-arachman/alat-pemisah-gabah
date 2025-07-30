@@ -43,7 +43,8 @@ export default function Tentang() {
           <div className="space-y-2 text-gray-700">
             <p>
               <span className="font-semibold">Nama Alat:</span> Alat Pemisah
-              Gabah Berisi dan Gabah Kosong Berbasis Blower Mesin Air
+              Gabah Berisi dan Gabah Kosong Berbasis Blower Mesin Air dengan
+              Potensio
             </p>
             <p>
               <span className="font-semibold">Dibuat oleh:</span> Divisi
@@ -135,6 +136,27 @@ export default function Tentang() {
               <p className="text-gray-700 italic">&quot;{t.isi}&quot;</p>
             </Card>
           ))}
+        </div>
+      </section>
+      {/* Maps KKM Section */}
+      <section className="w-full max-w-2xl mx-auto mt-8">
+        <h2 className="text-xl md:text-2xl font-bold text-blue-700 mb-4 flex items-center gap-2">
+          <span role="img" aria-label="maps">
+            🗺️
+          </span>
+          Lokasi Kegiatan KKM
+        </h2>
+        <div className="w-full aspect-video rounded-lg overflow-hidden border shadow">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31728.152321237776!2d106.2891902185314!3d-6.261221938529664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e421b0e39cc6ec5%3A0x94740a34169522db!2sBinong%2C%20Kec.%20Pamarayan%2C%20Kabupaten%20Serang%2C%20Banten!5e0!3m2!1sid!2sid!4v1753698527048!5m2!1sid!2sid"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Lokasi Kegiatan KKM"
+          ></iframe>
         </div>
       </section>
     </div>
