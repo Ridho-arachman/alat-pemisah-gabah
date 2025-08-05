@@ -53,48 +53,232 @@ export default function UnduhModul() {
         </h2>
         <Card className="bg-gray-50">
           <CardContent className="py-4">
-            <pre className="whitespace-pre-wrap text-gray-700 text-sm md:text-base font-mono leading-relaxed">
-              {`
-KATA PENGANTAR................................................................. i
-DAFTAR ISI.................................................................... ii
-DAFTAR GAMBAR................................................................. iii
-DAFTAR TABEL.................................................................. iv
+            <div className="text-gray-700 text-sm md:text-base leading-relaxed">
+              <div className="text-center font-bold text-lg mb-6">
+                DAFTAR ISI
+              </div>
 
-BAB I – PENDAHULUAN........................................................... 1
-  1.1 Latar Belakang
-  1.2 Rumusan Masalah
-  1.3 Tujuan Kegiatan
-  1.4 Manfaat Kegiatan
-  1.5 Waktu dan Lokasi Pelaksanaan
+              <div className="space-y-1">
+                <div className="flex justify-between items-center">
+                  <span>KATA PENGANTAR</span>
+                  <span className="text-blue-600 font-medium">2</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>DAFTAR GAMBAR</span>
+                  <span className="text-blue-600 font-medium">5</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>DAFTAR TABEL</span>
+                  <span className="text-blue-600 font-medium">6</span>
+                </div>
+              </div>
 
-BAB II – LANDASAN TEORI DAN STUDI TERDAHULU.................... 6
-  2.1 Teknologi Tepat Guna (TTG) dalam Pertanian
-  2.2 Prinsip Pemisahan Gabah berdasarkan Berat Jenis
-  2.3 Studi Alat Sejenis dan Komponen Utama
+              <div className="mt-6 space-y-1">
+                <div className="flex justify-between items-center font-semibold text-blue-800">
+                  <span>BAB I PENDAHULUAN</span>
+                  <span>7</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>1.1 Latar Belakang</span>
+                  <span className="text-blue-600 font-medium">7</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>1.2 Rumusan Masalah</span>
+                  <span className="text-blue-600 font-medium">8</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>1.3 Tujuan Kegiatan</span>
+                  <span className="text-blue-600 font-medium">8</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>1.4 Manfaat Kegiatan</span>
+                  <span className="text-blue-600 font-medium">9</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>1.5 Metodologi Pelaksanaan</span>
+                  <span className="text-blue-600 font-medium">10</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>1.6 Waktu dan Lokasi Pelaksanaan</span>
+                  <span className="text-blue-600 font-medium">11</span>
+                </div>
+              </div>
 
-BAB III – DESAIN DAN SPESIFIKASI ALAT............................. 10
-  3.1 Gambar Rancangan Umum
-  3.2 Deskripsi Komponen:
-      – Kerangka Kayu
-      – Blower Mesin Air
-      – Saluran Masuk dan Keluaran Gabah
-      – Potensiometer
-  3.3 Prinsip Kerja Berdasarkan Massa Jenis dan Aliran Udara
-  3.4 Estimasi Biaya Pembuatan
+              <div className="mt-6 space-y-1">
+                <div className="flex justify-between items-center font-semibold text-blue-800">
+                  <span>BAB II LANDASAN TEORI DAN STUDI TERDAHULU</span>
+                  <span>12</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>2.1 Teknologi Tepat Guna (TTG) dalam Pertanian</span>
+                  <span className="text-blue-600 font-medium">12</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>
+                    2.2 Prinsip Pemisahan Gabah berdasarkan Berat Jenis
+                  </span>
+                  <span className="text-blue-600 font-medium">13</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>2.3 Studi Alat Sejenis dan Komponen Utama</span>
+                  <span className="text-blue-600 font-medium">14</span>
+                </div>
+              </div>
 
-BAB IV – PEMBUATAN DAN PERAKITAN ALAT.......................... 17
-  4.1 Alat dan Bahan
-  4.2 Prosedur Pembuatan dan Perakitan
-  4.3 Penyesuaian dan Kalibrasi
-  4.4 Keselamatan Kerja
+              <div className="mt-6 space-y-1">
+                <div className="flex justify-between items-center font-semibold text-blue-800">
+                  <span>BAB III DESAIN DAN SPESIFIKASI ALAT</span>
+                  <span>16</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>3.1 Desain Alat</span>
+                  <span className="text-blue-600 font-medium">16</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>3.2 Deskripsi Komponen</span>
+                  <span className="text-blue-600 font-medium">18</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.1. Kayu Kaso (400 x 4 x 6 cm)</span>
+                  <span className="text-blue-600 font-medium">18</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.2. Kayu Papan (12 x 3 cm)</span>
+                  <span className="text-blue-600 font-medium">19</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.3. Seng Talang</span>
+                  <span className="text-blue-600 font-medium">19</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.4. Kayu List</span>
+                  <span className="text-blue-600 font-medium">20</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.5. Motor Pompa Air</span>
+                  <span className="text-blue-600 font-medium">20</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.6. Dimmer SCR 2000 Watt</span>
+                  <span className="text-blue-600 font-medium">21</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.7. Baling - Baling Kipas (16 Inch)</span>
+                  <span className="text-blue-600 font-medium">21</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.8. Paku (10, 7, 4, 5 & GRC)</span>
+                  <span className="text-blue-600 font-medium">22</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>3.2.9. Connector Ring 12 mm</span>
+                  <span className="text-blue-600 font-medium">22</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>
+                    3.3 Prinsip Kerja Berdasarkan Massa Jenis dan Aliran Udara
+                  </span>
+                  <span className="text-blue-600 font-medium">23</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>3.4 Estimasi Biaya Pembuatan</span>
+                  <span className="text-blue-600 font-medium">24</span>
+                </div>
+              </div>
 
-BAB V – PENUTUP......................................................... 24
-  5.1 Kesimpulan
-  5.2 Saran dan Pengembangan ke Depan
+              <div className="mt-6 space-y-1">
+                <div className="flex justify-between items-center font-semibold text-blue-800">
+                  <span>BAB IV PEMBUATAN DAN PERAKITAN ALAT</span>
+                  <span>26</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>4.1 Alat dan Bahan</span>
+                  <span className="text-blue-600 font-medium">26</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.1.1. Komponen dan Bahan Utama</span>
+                  <span className="text-blue-600 font-medium">26</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.1.2. Alat Penunjang yang Digunakan</span>
+                  <span className="text-blue-600 font-medium">26</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>4.2 Prosedur Pembuatan dan Perakitan</span>
+                  <span className="text-blue-600 font-medium">28</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.2.1 Pembuatan Alat</span>
+                  <span className="text-blue-600 font-medium">28</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.2.2 Rangkaian perakitan alat dengan dimmer</span>
+                  <span className="text-blue-600 font-medium">33</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>4.3 Pengujian Alat (Input dan Output Gabah)</span>
+                  <span className="text-blue-600 font-medium">33</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.3.1 Tujuan Pengujian</span>
+                  <span className="text-blue-600 font-medium">33</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.3.2 Bahan Uji</span>
+                  <span className="text-blue-600 font-medium">34</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.3.3 Prosedur Pengujian</span>
+                  <span className="text-blue-600 font-medium">34</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.3.4 Hasil Pengujian</span>
+                  <span className="text-blue-600 font-medium">34</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.3.5 Kesimpulan Pengujian</span>
+                  <span className="text-blue-600 font-medium">34</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>4.4 Keselamatan dalam Desain dan Konstruksi Alat</span>
+                  <span className="text-blue-600 font-medium">35</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.4.1 Keselamatan dalam Desain Alat</span>
+                  <span className="text-blue-600 font-medium">35</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.4.2 Keselamatan dalam Proses Konstruksi</span>
+                  <span className="text-blue-600 font-medium">35</span>
+                </div>
+                <div className="flex justify-between items-center ml-8">
+                  <span>4.4.3 Pencegahan Risiko Penggunaan</span>
+                  <span className="text-blue-600 font-medium">36</span>
+                </div>
+              </div>
 
-DAFTAR PUSTAKA............................................................... 26
-`}
-            </pre>
+              <div className="mt-6 space-y-1">
+                <div className="flex justify-between items-center font-semibold text-blue-800">
+                  <span>BAB V PENUTUP</span>
+                  <span>36</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>5.1 Kesimpulan</span>
+                  <span className="text-blue-600 font-medium">36</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>5.2 Saran dan Pengembangan ke Depan</span>
+                  <span className="text-blue-600 font-medium">37</span>
+                </div>
+              </div>
+
+              <div className="mt-6 space-y-1">
+                <div className="flex justify-between items-center">
+                  <span>DAFTAR PUSTAKA</span>
+                  <span className="text-blue-600 font-medium">38</span>
+                </div>
+              </div>
+            </div>
           </CardContent>
         </Card>
       </section>

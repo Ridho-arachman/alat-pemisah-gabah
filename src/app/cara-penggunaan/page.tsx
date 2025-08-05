@@ -19,7 +19,7 @@ export default function CaraPenggunaan() {
           {data.title}
         </h1>
         <div className="grid gap-4 md:grid-cols-2">
-          {data.langkah.map((l: any, i: number) => (
+          {data.langkah.map((l, i) => (
             <Card key={i} className="flex flex-row items-start gap-4 p-4">
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-700 text-lg">
                 {i + 1}
@@ -38,7 +38,7 @@ export default function CaraPenggunaan() {
           {data.ilustrasi.title}
         </h2>
         <Card className="flex flex-col items-center p-6">
-          <div className="relative w-64 h-40 md:w-96 md:h-56 rounded-lg overflow-hidden border-2 border-blue-100 bg-gray-100 mb-4">
+          <div className="relative w-80 h-48 md:w-[500px] md:h-[300px] lg:w-[600px] lg:h-[350px] rounded-lg overflow-hidden border-2 border-blue-100 bg-gray-100 mb-4">
             <Image
               src={data.ilustrasi.image}
               alt={data.ilustrasi.alt}

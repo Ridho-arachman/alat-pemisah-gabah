@@ -7,7 +7,7 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion";
 import { Card, CardContent } from "@/components/ui/card";
-import { Wrench, AlertCircle, Calendar, Phone } from "lucide-react";
+import { Wrench, AlertCircle, Calendar } from "lucide-react";
 import data from "@/lib/perawatan.json";
 
 export default function Perawatan() {
@@ -77,7 +77,7 @@ export default function Perawatan() {
         </div>
       </section>
       {/* Kontak Bantuan Section */}
-      <section className="w-full max-w-xl mx-auto">
+      {/* <section className="w-full max-w-xl mx-auto">
         <Card className="flex flex-row items-center gap-3 p-4 mt-4">
           <Phone className="w-6 h-6 text-blue-500" />
           <CardContent className="p-0">
@@ -93,7 +93,7 @@ export default function Perawatan() {
             </p>
           </CardContent>
         </Card>
-      </section>
+      </section> */}
     </div>
   );
 }

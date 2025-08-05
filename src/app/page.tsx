@@ -25,19 +25,19 @@ import { useState } from "react";
 // Data gambar carousel
 const carouselImages = [
   {
-    src: "/file.svg",
+    src: "/tampak_depan_alat_ttg.jpg",
     alt: "Gambar Alat 1",
     title: "Tampak Depan Alat",
   },
   {
-    src: "/globe.svg",
+    src: "/tampak_samping.jpg",
     alt: "Gambar Alat 2",
     title: "Tampak Samping Alat",
   },
   {
-    src: "/window.svg",
+    src: "/mesin_motor.jpg",
     alt: "Gambar Alat 3",
-    title: "Detail Komponen Alat",
+    title: "Mesin Motor",
   },
 ];
 
