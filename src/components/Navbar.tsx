@@ -49,7 +49,7 @@ export default function Navbar() {
         >
           <div className="flex flex-col">
             <span>Panduan Penggunaan</span>
-            <br className="block lg:hidden" />
+            <br className="hidden" />
             <span>Alat Pemisah Gabah</span>
           </div>
         </Link>
@@ -112,8 +112,12 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`px-3 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-blue-50 hover:text-blue-700 ${
-                      pathname.startsWith(link.href)
+                    className={`px-2 md:px-3 py-2 rounded-md font-medium transition-colors duration-200 hover:bg-blue-50 hover:text-blue-700 ${
+                      link.href === "/"
+                        ? pathname === "/"
+                          ? "bg-blue-100 text-blue-700"
+                          : "text-gray-700"
+                        : pathname.startsWith(link.href)
                         ? "bg-blue-100 text-blue-700"
                         : "text-gray-700"
                     }`}
