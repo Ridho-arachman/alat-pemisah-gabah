@@ -68,71 +68,71 @@ export default function UnduhModul() {
                   <span className="text-blue-600 font-medium">5</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span>DAFTAR TABEL</span>
-                  <span className="text-blue-600 font-medium">6</span>
+                  <span>DAFTAR TABLE</span>
+                  <span className="text-blue-600 font-medium">7</span>
                 </div>
               </div>
 
               <div className="mt-6 space-y-1">
                 <div className="flex justify-between items-center font-semibold text-blue-800">
                   <span>BAB I PENDAHULUAN</span>
-                  <span>7</span>
+                  <span>8</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>1.1 Latar Belakang</span>
-                  <span className="text-blue-600 font-medium">7</span>
+                  <span className="text-blue-600 font-medium">8</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>1.2 Rumusan Masalah</span>
-                  <span className="text-blue-600 font-medium">8</span>
-                </div>
-                <div className="flex justify-between items-center ml-4">
-                  <span>1.3 Tujuan Kegiatan</span>
-                  <span className="text-blue-600 font-medium">8</span>
-                </div>
-                <div className="flex justify-between items-center ml-4">
-                  <span>1.4 Manfaat Kegiatan</span>
                   <span className="text-blue-600 font-medium">9</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
-                  <span>1.5 Metodologi Pelaksanaan</span>
+                  <span>1.3 Tujuan Kegiatan</span>
+                  <span className="text-blue-600 font-medium">9</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>1.4 Manfaat Kegiatan</span>
                   <span className="text-blue-600 font-medium">10</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
-                  <span>1.6 Waktu dan Lokasi Pelaksanaan</span>
+                  <span>1.5 Metodologi Pelaksanaan</span>
                   <span className="text-blue-600 font-medium">11</span>
+                </div>
+                <div className="flex justify-between items-center ml-4">
+                  <span>1.6 Waktu dan Lokasi Pelaksanaan</span>
+                  <span className="text-blue-600 font-medium">12</span>
                 </div>
               </div>
 
               <div className="mt-6 space-y-1">
                 <div className="flex justify-between items-center font-semibold text-blue-800">
                   <span>BAB II LANDASAN TEORI DAN STUDI TERDAHULU</span>
-                  <span>12</span>
+                  <span>13</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>2.1 Teknologi Tepat Guna (TTG) dalam Pertanian</span>
-                  <span className="text-blue-600 font-medium">12</span>
+                  <span className="text-blue-600 font-medium">13</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>
                     2.2 Prinsip Pemisahan Gabah berdasarkan Berat Jenis
                   </span>
-                  <span className="text-blue-600 font-medium">13</span>
+                  <span className="text-blue-600 font-medium">14</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>2.3 Studi Alat Sejenis dan Komponen Utama</span>
-                  <span className="text-blue-600 font-medium">14</span>
+                  <span className="text-blue-600 font-medium">15</span>
                 </div>
               </div>
 
               <div className="mt-6 space-y-1">
                 <div className="flex justify-between items-center font-semibold text-blue-800">
                   <span>BAB III DESAIN DAN SPESIFIKASI ALAT</span>
-                  <span>16</span>
+                  <span>17</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>3.1 Desain Alat</span>
-                  <span className="text-blue-600 font-medium">16</span>
+                  <span className="text-blue-600 font-medium">17</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>3.2 Deskripsi Komponen</span>
@@ -140,7 +140,7 @@ export default function UnduhModul() {
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.1. Kayu Kaso (400 x 4 x 6 cm)</span>
-                  <span className="text-blue-600 font-medium">18</span>
+                  <span className="text-blue-600 font-medium">19</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.2. Kayu Papan (12 x 3 cm)</span>
@@ -148,7 +148,7 @@ export default function UnduhModul() {
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.3. Seng Talang</span>
-                  <span className="text-blue-600 font-medium">19</span>
+                  <span className="text-blue-600 font-medium">20</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.4. Kayu List</span>
@@ -156,7 +156,7 @@ export default function UnduhModul() {
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.5. Motor Pompa Air</span>
-                  <span className="text-blue-600 font-medium">20</span>
+                  <span className="text-blue-600 font-medium">21</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.6. Dimmer SCR 2000 Watt</span>
@@ -164,7 +164,7 @@ export default function UnduhModul() {
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.7. Baling - Baling Kipas (16 Inch)</span>
-                  <span className="text-blue-600 font-medium">21</span>
+                  <span className="text-blue-600 font-medium">22</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.8. Paku (10, 7, 4, 5 & GRC)</span>
@@ -172,7 +172,7 @@ export default function UnduhModul() {
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>3.2.9. Connector Ring 12 mm</span>
-                  <span className="text-blue-600 font-medium">22</span>
+                  <span className="text-blue-600 font-medium">23</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>
@@ -182,100 +182,100 @@ export default function UnduhModul() {
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>3.4 Estimasi Biaya Pembuatan</span>
-                  <span className="text-blue-600 font-medium">24</span>
+                  <span className="text-blue-600 font-medium">25</span>
                 </div>
               </div>
 
               <div className="mt-6 space-y-1">
                 <div className="flex justify-between items-center font-semibold text-blue-800">
                   <span>BAB IV PEMBUATAN DAN PERAKITAN ALAT</span>
-                  <span>26</span>
+                  <span>27</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>4.1 Alat dan Bahan</span>
-                  <span className="text-blue-600 font-medium">26</span>
+                  <span className="text-blue-600 font-medium">27</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.1.1. Komponen dan Bahan Utama</span>
-                  <span className="text-blue-600 font-medium">26</span>
+                  <span className="text-blue-600 font-medium">27</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.1.2. Alat Penunjang yang Digunakan</span>
-                  <span className="text-blue-600 font-medium">26</span>
+                  <span className="text-blue-600 font-medium">28</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>4.2 Prosedur Pembuatan dan Perakitan</span>
-                  <span className="text-blue-600 font-medium">28</span>
+                  <span className="text-blue-600 font-medium">29</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
-                  <span>4.2.1 Pembuatan Alat</span>
-                  <span className="text-blue-600 font-medium">28</span>
+                  <span>4.2.1 Rangkaian perakitan alat dengan dimmer</span>
+                  <span className="text-blue-600 font-medium">29</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
-                  <span>4.2.2 Rangkaian perakitan alat dengan dimmer</span>
-                  <span className="text-blue-600 font-medium">33</span>
+                  <span>4.2.2 Pembuatan Alat</span>
+                  <span className="text-blue-600 font-medium">30</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>4.3 Pengujian Alat (Input dan Output Gabah)</span>
-                  <span className="text-blue-600 font-medium">33</span>
+                  <span className="text-blue-600 font-medium">34</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.3.1 Tujuan Pengujian</span>
-                  <span className="text-blue-600 font-medium">33</span>
+                  <span className="text-blue-600 font-medium">35</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.3.2 Bahan Uji</span>
-                  <span className="text-blue-600 font-medium">34</span>
+                  <span className="text-blue-600 font-medium">35</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.3.3 Prosedur Pengujian</span>
-                  <span className="text-blue-600 font-medium">34</span>
+                  <span className="text-blue-600 font-medium">35</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.3.4 Hasil Pengujian</span>
-                  <span className="text-blue-600 font-medium">34</span>
+                  <span className="text-blue-600 font-medium">36</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.3.5 Kesimpulan Pengujian</span>
-                  <span className="text-blue-600 font-medium">34</span>
+                  <span className="text-blue-600 font-medium">37</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>4.4 Keselamatan dalam Desain dan Konstruksi Alat</span>
-                  <span className="text-blue-600 font-medium">35</span>
+                  <span className="text-blue-600 font-medium">37</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.4.1 Keselamatan dalam Desain Alat</span>
-                  <span className="text-blue-600 font-medium">35</span>
+                  <span className="text-blue-600 font-medium">37</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.4.2 Keselamatan dalam Proses Konstruksi</span>
-                  <span className="text-blue-600 font-medium">35</span>
+                  <span className="text-blue-600 font-medium">38</span>
                 </div>
                 <div className="flex justify-between items-center ml-8">
                   <span>4.4.3 Pencegahan Risiko Penggunaan</span>
-                  <span className="text-blue-600 font-medium">36</span>
+                  <span className="text-blue-600 font-medium">38</span>
                 </div>
               </div>
 
               <div className="mt-6 space-y-1">
                 <div className="flex justify-between items-center font-semibold text-blue-800">
                   <span>BAB V PENUTUP</span>
-                  <span>36</span>
+                  <span>39</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>5.1 Kesimpulan</span>
-                  <span className="text-blue-600 font-medium">36</span>
+                  <span className="text-blue-600 font-medium">39</span>
                 </div>
                 <div className="flex justify-between items-center ml-4">
                   <span>5.2 Saran dan Pengembangan ke Depan</span>
-                  <span className="text-blue-600 font-medium">37</span>
+                  <span className="text-blue-600 font-medium">39</span>
                 </div>
               </div>
 
               <div className="mt-6 space-y-1">
                 <div className="flex justify-between items-center">
                   <span>DAFTAR PUSTAKA</span>
-                  <span className="text-blue-600 font-medium">38</span>
+                  <span className="text-blue-600 font-medium">42</span>
                 </div>
               </div>
             </div>
