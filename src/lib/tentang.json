@@ -48,7 +48,7 @@
       "event": "Mulai pembuatan alat"
     },
     {
-      "tahun": "Agustus 01 2025",
+      "tahun": "Agustus 04 2025",
       "event": "uji coba alat TTG"
     },
     {
@@ -56,8 +56,16 @@
       "event": "Penyerahan alat TTG ke kantor desa"
     },
     {
-      "tahun": "Agustus 18 2025",
-      "event": "Lokal karya TTG di kantor desa"
+      "tahun": "Agustus 19 2025",
+      "event": "Lokal karya TTG di Kantor Desa Binong"
+    },
+    {
+      "tahun": "Agustus 20 2025",
+      "event": "Lokal karya TTG di Kantor Kecamatan Pamarayan"
+    },
+    {
+      "tahun": "Agustus 30 - 31 2025",
+      "event": "Lokal karya TTG di Universitas Bina Bangsa"
     }
   ],
   "testimoni": [
