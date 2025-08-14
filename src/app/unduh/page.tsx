@@ -282,6 +282,73 @@ export default function UnduhModul() {
           </CardContent>
         </Card>
       </section>
+      {/* Sertifikat HKI Section */}
+      <section className="w-full max-w-4xl mx-auto">
+        <h2 className="text-xl md:text-2xl font-bold text-blue-700 mb-4 flex items-center gap-2">
+          🏆 SERTIFIKAT HKI
+        </h2>
+        <Card className="bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200 shadow-lg">
+          <CardContent className="flex flex-col gap-4 py-6">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                <span className="text-2xl">🏆</span>
+              </div>
+              <h3 className="text-lg font-semibold text-blue-800 mb-2">
+                {data.sertifikatHKI.title}
+              </h3>
+              <p className="text-gray-600 text-sm mb-4">
+                {data.sertifikatHKI.description}
+              </p>
+            </div>
+
+            {/* PDF Preview Section */}
+            <div className="w-full">
+              <div className="bg-white rounded-lg border border-gray-200 p-4 mb-4">
+                <h4 className="text-sm font-medium text-gray-700 mb-3 flex items-center gap-2">
+                  📄 Preview Sertifikat HKI
+                </h4>
+                <div className="w-full h-96 md:h-[500px] bg-gray-100 rounded border-2 border-dashed border-gray-300 flex items-center justify-center">
+                  <iframe
+                    src={`${data.sertifikatHKI.filePath}#toolbar=0&navpanes=0&scrollbar=1`}
+                    className="w-full h-full rounded"
+                    title="Preview Sertifikat HKI"
+                    loading="lazy"
+                  >
+                    <p className="text-gray-500 text-center">
+                      Browser Anda tidak mendukung preview PDF.
+                      <a
+                        href={data.sertifikatHKI.filePath}
+                        className="text-blue-600 underline ml-1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Klik di sini untuk membuka PDF
+                      </a>
+                    </p>
+                  </iframe>
+                </div>
+                <div className="text-center text-xs text-gray-500 mt-2">
+                  Scroll untuk melihat seluruh dokumen • Format: PDF
+                </div>
+              </div>
+            </div>
+
+            <Button
+              asChild
+              size="lg"
+              className="w-full max-w-xs mx-auto flex gap-2 items-center bg-blue-600 hover:bg-blue-700"
+            >
+              <a href={data.sertifikatHKI.filePath} download>
+                <Download className="w-5 h-5 mr-2" />{" "}
+                {data.sertifikatHKI.buttonText}
+              </a>
+            </Button>
+            <div className="text-center text-xs text-gray-500 mt-2">
+              Format: PDF • Ukuran: ~2.5 MB
+            </div>
+          </CardContent>
+        </Card>
+      </section>
       {/* Petunjuk Download Section */}
       <section className="w-full max-w-xl mx-auto">
         <Card className="flex flex-row items-center gap-3 p-4 mt-4 bg-blue-50 border-blue-200">

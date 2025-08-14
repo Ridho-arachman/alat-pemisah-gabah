@@ -19,6 +19,12 @@
       "Kontak Bantuan"
     ]
   },
+  "sertifikatHKI": {
+    "title": "Sertifikat HKI",
+    "description": "Dokumen resmi Hak Kekayaan Intelektual untuk alat pemisah gabah teknologi tepat guna",
+    "buttonText": "Download Sertifikat HKI",
+    "filePath": "/sertifikat_hki.pdf"
+  },
   "petunjuk": {
     "title": "Petunjuk Download",
     "description": "Download file dengan klik tombol download modul pdf"
